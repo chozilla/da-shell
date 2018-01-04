@@ -6,6 +6,9 @@
   "author": "chozilla <git@darkaura.de>",
   "license": "commercial",
   "private": true,
+  "directories": {
+    "lib": "./lib"
+  },
   "dependencies": {
     "chalk": "^2.3.0",
     "mootools": "^1.5.2"
