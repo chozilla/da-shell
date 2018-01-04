@@ -4,5 +4,10 @@
   "promptParams": {
     "version": "1.0.1"
   },
-  "commandPath": "shell-commands"
+  "commandPath": "shell-commands",
+  "errorHistory": 50,
+  "logLevel": 1,
+  "commandConfig": {
+    "error": {}
+  }
 }
