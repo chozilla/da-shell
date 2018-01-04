@@ -1,14 +1,11 @@
 {
   "name": "da-shell",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./lib/shellClass.js",
   "repository": "git@10.13.37.9:da-shell.git",
   "author": "chozilla <git@darkaura.de>",
   "license": "commercial",
   "private": true,
-  "directories": {
-    "lib": "./lib"
-  },
   "dependencies": {
     "chalk": "^2.3.0",
     "mootools": "^1.5.2"
