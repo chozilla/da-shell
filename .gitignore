@@ -1,0 +1,19 @@
+# OS garbage files
+*.bak
+*.swp
+.DS_Store
+/npm-debug.log*
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# eclipse
+.buildpath
+.project
+.settings
+
+# Application Files Excluded
+node_modules/

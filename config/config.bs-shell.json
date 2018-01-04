@@ -1,0 +1,8 @@
+{
+  "prompt": "da-shell({version})",
+  "promptColor": "yellow",
+  "promptParams": {
+    "version": "1.0.1"
+  },
+  "commandPath": "shell-commands"
+}
