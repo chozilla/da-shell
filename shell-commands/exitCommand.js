@@ -6,8 +6,8 @@ let command = new Class({
 	
 	trigger: 'exit',
 	
-	fn: function(shell, params, resolve, reject) {
-		shell.rl.question("Confirm exit : ", function(answer) {
+	fn: function(resources, params, resolve, reject) {
+		resources.shell.rl.question("Confirm exit : ", function(answer) {
 			return (answer.match(/^y(es)?$/i)) ? process.exit(1) : reject('No confirmation.');
 		});
 	},
