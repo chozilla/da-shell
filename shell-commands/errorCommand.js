@@ -1,4 +1,3 @@
-require('mootools');
 const color = require('chalk');
 const baseCommand = require('../lib/commandApi');
 

@@ -1,4 +1,3 @@
-require('mootools');
 const baseCommand = require('../lib/commandApi');
 
 let command = new Class({

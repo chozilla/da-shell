@@ -8,6 +8,6 @@
   "private": true,
   "dependencies": {
     "chalk": "^2.3.0",
-    "mootools": "^1.5.2"
+    "mootools-server": "git://github.com/chozilla/mootools-server.git"
   }
 }

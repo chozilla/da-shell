@@ -34,9 +34,9 @@ has-flag@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-2.0.0.tgz#e8207af1cc7b30d446cc70b734b5e8be18f88d51"
 
-mootools@^1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/mootools/-/mootools-1.5.2.tgz#1fddf1b4e0a9e65d20d483b9b4b08e1e87b1161a"
+"mootools-server@git://github.com/chozilla/mootools-server.git":
+  version "1.6.0"
+  resolved "git://github.com/chozilla/mootools-server.git#311776d607679394e1e5c4067e0ed4ecc9937ee9"
 
 supports-color@^4.0.0:
   version "4.5.0"
