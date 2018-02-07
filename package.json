@@ -7,6 +7,6 @@
   "license": "MIT",
   "dependencies": {
     "chalk": "^2.3.0",
-    "mootools-server": "git://github.com/chozilla/mootools-server.git"
+    "mootools-server": "https://github.com/chozilla/mootools-server.git"
   }
 }

@@ -14,9 +14,9 @@ let resources = {
 let prompt = resources.prompt = new shellClass(resources, console, shellConfig, __dirname + '/' + shellConfig.commandPath);
 
 let _default = 0;
-let _answers = [0,1,2,3,4,5,6,7,8,9];
+let _answers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 prompt.question('Enter an number between 0 and 9', (answer) => {
-	let test = parseInt(answer,10);
+	let test = parseInt(answer, 10);
 	if(test >= 0 && test <= 9) {
 		return test;
 	} else {
@@ -24,21 +24,26 @@ prompt.question('Enter an number between 0 and 9', (answer) => {
 	}
 }, _answers).then((number) => {
 	console.info('you have chosen', number);
-	
-	prompt.question('Enter a new number between '+number+' and '+(number+20), (answer) => {
-		let test = parseInt(answer,10);
-		if(test >= number && test < number+20) {
+	return number;
+}).then((number) => {
+	return prompt.question('Enter a new number between ' + number + ' and ' + Math.pow(number, number), (answer) => {
+		let test = parseInt(answer, 10);
+		if(test >= number && test < Math.pow(number, number)) {
 			return test;
 		} else {
 			return null;
 		}
-	}, _answers, _default).then((number) => {
-		console.info('you have chosen', number);
-	});
+	}, _answers, _default);
+}).then((number) => {
+	console.info('you have chosen', number);
+}).then((number) => {
+	return prompt.interactive(color.green('test > '), {}, [number]);
+}).then((input) => {
+	console.log('choosen', input);
 }).catch(() => {
 	process.exit(1);
 });
 
 setInterval(function() {
-	console.log(color.gray('Some Text '+ Math.random()));
+	console.log(color.gray('Some Text ' + Math.random()));
 }, 2000);
