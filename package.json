@@ -4,8 +4,7 @@
   "main": "./lib/shellClass.js",
   "repository": "git@10.13.37.9:da-shell.git",
   "author": "chozilla <git@darkaura.de>",
-  "license": "commercial",
-  "private": true,
+  "license": "MIT",
   "dependencies": {
     "chalk": "^2.3.0",
     "mootools-server": "git://github.com/chozilla/mootools-server.git"
