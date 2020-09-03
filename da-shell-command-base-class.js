@@ -1,15 +1,12 @@
-require('mootools-server');
 const color = require('chalk');
 
-module.exports = new Class({
-	active: false,
-	trigger: 'help',
+module.exports = class commandBaseClass {
+	active = false;
+	trigger = 'help';
 	
-	initialize: function(resources) {
-		
-	},
+	constructor(resources) {}
 	
-	exec: function(resources, params) {
+	exec(resources, params) {
 		return new Promise((resolve, reject) => {
 			this.fn(resources, params, resolve, reject);
 			
@@ -45,10 +42,10 @@ module.exports = new Class({
 				reason
 			);
 		});
-	},
+	}
 	
-	fn: function(resources, params, resolve, reject) {
+	fn(resources, params, resolve, reject) {
 		
 	}
 	
-});
+}

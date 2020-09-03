@@ -5,7 +5,7 @@
     "version": "1.0.1"
   },
   "commandPath": "shell-commands",
-  "errorHistory": 50,
+  "errorHistory": 100,
   "logLevel": 1,
   "commandConfig": {
     "error": {}

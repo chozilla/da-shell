@@ -1,8 +1,6 @@
-require('mootools-server');
-
 const color = require('chalk');
 const shellConfig = require('./config/config.bs-shell.json');
-const shellClass = require('./lib/shellClass');
+const shellClass = require('./da-shell-class');
 
 process.stdout.write("\x1Bc");
 
@@ -11,7 +9,7 @@ let resources = {
 	console: console,
 };
 
-let prompt = resources.prompt = new shellClass(resources, console, shellConfig, __dirname + '/' + shellConfig.commandPath);
+let prompt = resources.prompt = new shellClass(resources, shellConfig);
 
 let _default = 0;
 let _answers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -46,4 +44,4 @@ prompt.question('Enter an number between 0 and 9', (answer) => {
 
 setInterval(function() {
 	console.log(color.gray('Some Text ' + Math.random()));
-}, 2000);
+}, 1000);

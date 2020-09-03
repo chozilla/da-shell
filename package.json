@@ -1,12 +1,12 @@
 {
   "name": "da-shell",
   "version": "1.0.0",
-  "main": "./lib/shellClass.js",
+  "main": "da-shell-class.js",
+  "type": "module",
   "repository": "git@10.13.37.9:da-shell.git",
   "author": "chozilla <git@darkaura.de>",
   "license": "MIT",
   "dependencies": {
-    "chalk": "^2.3.0",
-    "mootools-server": "https://github.com/chozilla/mootools-server.git"
+    "chalk": "^4.1.0"
   }
 }
